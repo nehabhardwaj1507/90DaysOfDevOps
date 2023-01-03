@@ -1,0 +1,15 @@
+DAY-1 FUNDAMENTALS OF DEVOPS
+
+INTRODUCTION TO DEVOPS: 
+DevOps, as its name suggests, consists of two parts: Development and Operations. It acts as an intermediate between software development team knows as Dev and operations team as Ops. 
+DevOps is a solution provided to the IT industries to automate the processes and lessen the process time for SDLC (Software Development Life Cycle). Most of the DevOps projects run through the Agile methodology. 
+
+SIGNIFICANCE OF DEVOPS SOLUTION:
+DevOps proves as the best approach to solve the conflict between software developer and operations team. It acts as a single team to collaborate with the code building, deploying and testing environment. Before DevOps, the project work was distributed between development team and operations team. In that case, sometimes operations team faced issues while implementing the code which was perfectly delivered by the developer team. 
+So, notifying the issue will uplift chaos because both the teams are perfectly playing their roles but the complications are due to software dependencies or in implementation of code. Now the question is who will rectify the error and resolve the conflict? This was the reason; DevOps solution was required. 
+DevOps life cycle performs automation by going through the stages of DevOps to Plan, Build, Test, Release, Deploy, Operate and Monitor the continuous software development.
+ 
+Let’s understand the significance of DevOps in terms of Automation, Scaling and Infrastructure:
+Automation: Automation simply stands for performing a task automatically. In other words, it is the technique to reduce human input and automate the processes whenever any update occurs. It helps to fasten the product lifecycle by using automated tools. DevOps is a practice that is used to generate continuous integration, continuous deployment lifecycle to support automation.
+Scaling: Scaling is a type of automation that allows DevOps processes to scale up or down based on the needs or requirements. DevOps supports autoscaling. According to that, if demand rises with the growth of business, the enterprise can configure its systems to scale up and meet the threshold whereas scale down when demand falls.
+Infrastructure: Automation, Scaling and Infrastructure are corelated to each other. DevOps is a practice to manage infrastructure with the help of code. Infrastructure as Code also known as IaC that can manage and provision the IT environment with multiple lines of code rather than performing manual tasks. It provides automation and scaling to offer fast production and feedback to assure good quality of product. 
