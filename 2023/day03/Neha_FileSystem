@@ -1,0 +1,13 @@
+It’s time to explore more about the basic linux commands to complete task-3 of #day3 challenge👍. 
+Day 3 is to explore vim editor to create and write in the files. To display the content of those files and find the difference in the contents of the files. Also to change the permissions of a file. Moreover, to view the overall history of the work (commands) done on the shell.
+✔ vim filename: to create and open a file in the editor.
+✔ cat filename: to display the content of the file.
+✔ mv source destination: to move a file from source to destination.
+✔ rm filename: to remove a file.
+✔ rm -rf directory: to remove a directory by removing all the files recursively.
+✔ chmod xxx filename: to change the mode (read, write or execute) of a file.
+✔ head -x filename: to display the x no. of entries of a file from the top (head).
+✔ tail -x filename: to display the x no. of entries of a file from the bottom (tail).
+✔ diff file1 file2: to get the difference between file1 and file2.
+✔ history: to get the history of the work (commands) done till now.
+Thanks.
