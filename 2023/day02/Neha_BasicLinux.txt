@@ -1,0 +1,34 @@
+A DevOps engineer should have good command on Linux OS. There are numerous commands that one should know but before proceeding to commands and shell scripting let’s understand what is Linux?
+
+Linux is an Operating System just like windows, Mac OS and iOS. Linux is a family of open-source unix-like OS. It was developed by Linus Torvalds in September 1991.
+
+Linux has a strong File System Hierarchy. Everything in Linux is stored in these directories. Each directory has its own files that are categorised on the basis of their functionality. It originate from top-level directory known as Root (/).
+
+/bin: user binaries 
+/sbin: system binaries 
+/etc: configuration files
+/dev: device files
+/proc: process information 
+/var: variable files
+/tmp: temporary files
+/usr: user programs 
+/home: home directories 
+/boot: boot loader files
+/lib: system libraries 
+/opt: optional addons apps
+/mnt: mount directories 
+/media: removable media
+/src: service data
+
+
+Now, the time to complete task-2 of #day2 challenge👍. 
+Day ⿢ is about checking the present working directory. List all files and directories including hidden files. Create a nested directory.
+✔ pwd: to check the present working directory.
+✔ mkdir foldername: to create a directory 
+✔ cd: to change the present working directory.
+✔ mkdir .hiddenfoldername: to create a hidden folder.
+✔ ls -l: to list all the files and folders
+✔ ls -a: to list all the files and folders including hidden files
+✔ mkdir -p nesteddirectory/A/B/C: to create a nested directory.
+
+Thanks.
