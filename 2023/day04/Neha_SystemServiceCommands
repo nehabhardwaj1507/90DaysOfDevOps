@@ -1,0 +1,33 @@
+Let’s hands on more commands that are very important to move on the journey of understanding Linux. 
+
+◼ Connect EC2 instance to an SSH client using Keypair (.pem file).
+
+📌To do so, open ssh client and check is ssh enable on your system or not by using the command:
+$ ssh
+
+📌Go to the folder/directory where keypair is downloaded or specify the complete path of the key pair in the following command:
+$ ssh -i “Path of the keypair” ubuntu@public DNS
+
+📌Now EC2 instance is connected using SSH. Check the files associated with the server by using:
+$ ls
+
+◼ Exploring the difference between Top, Systemclt and Service command:
+
+📌 To practice these let’s install docker. 
+$ sudo apt-get install docker.io
+
+$ top -b | head -x
+
+$ systemctl status docker
+$ systemctl status sshd
+
+$ service docker status
+
+➡ Here, Top command is used to show active linux processes. It offers a real-time view of the processes running on the system. Head command will display the top ‘x’ entries of Top command.
+➡ Systemctl command runs with systemd service manager which is mostly used to enable services to start at boot time. We can also start, stop, reload or check status of the services with the help of systemctl command. It runs the service at the background. 
+➡ Whereas Service command starts, stops and check status of a service by calling the script. No background service runs here.
+
+➡ Now, the question is which one should we use Systemctl or Service Command?
+✔Answer is it depends upon the requirements. If you want to have greater control options in regard to the service you should use Systemctl otherwise service command can also serves the basic service management.
+
+Thanks.
