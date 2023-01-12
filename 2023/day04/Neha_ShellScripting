@@ -1,0 +1,39 @@
+Today I learned Shell Scripting as a part of task-4 of #90daysofdevops challenge👍. Super excited to write first shell scripting with the guidance of Shubham Londhe Sir. 
+
+Day ⿤ task is based on #shellscripting and solution to the following tasks in the given list:
+
+❓Explain in your own words and examples, what is Shell Scripting for DevOps.
+❓What is #!/bin/bash? can we write #!/bin/sh as well?
+❓Write a Shell Script which prints I will complete #90DaysOofDevOps challenge
+Write a Shell Script to take user input, input from arguments and print the variables.
+❓Write an Example of If else in Shell Scripting by comparing 2 numbers
+Was it difficult?
+
+◼Shell Scripting: It is a program that allows us to specify tasks to be performed in the form of scripts. These tasks are written in the form of commands in a script file with .sh extension. Scripting file automates the commands written in it line by line whenever it executes. Hence, shell scripting is used to avoid repetitive work. It also saves time as the script that is most frequently used can be written once and executed n number of times. 
+
+◼To write #shellscripting follow these steps:
+📌Create a file using any editor with ‘.sh’ extension and write the script in it line by line. Save the file and exit.
+$ vim file_script.sh
+
+📌Always remember that the first line of a shell scripting file is always:
+#!/bin/bash 
+Which is known as #shebang.
+👉Now, the question was can we use sh instead of bash in the first line? 
+Bash stands for ‘Bourne Again SHell’ where as Sh is simply SHell. 
+I tried using it and found it working well with some of the commands only while others resulted in an exception. 
+Hence, Bash is a superset of sh which supports feature of sh and offers more extensions on top of that. You will expect bash behaviour if you work in #!/bin/bash. 
+
+📌By default the file is in rw- mode for user. So, to execute it; change the mode to rwx for user.
+$ chmod 700 file_script.sh
+You can check the file mode by using
+$ls -la
+
+📌Now execute the script:
+$ bash file_script.sh
+This file can be run by using sh, ./, . instead of bash.
+
+◼The script written by me in the file servers multipurpose:
+✔ Displays user information 
+✔ Shows Memory and CPU utilisation 
+✔ Runs for-loop to present the tasks done under #90daysofdevops challenge.
+✔ Executes if-else to compare 2 numbers.
