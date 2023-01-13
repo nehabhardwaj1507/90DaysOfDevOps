@@ -1,0 +1,17 @@
+Day-5 task: Advance Linux Shell Scripting 
+
+◼ Writing a script is interesting, interactive and faster way to perform any task written in the form of scripts. In this task, #arguments   #variables  and #loops are used to create specified number of directories with a dynamic directory name. 
+
+◼ On the other hand, another #shellscript is created to take the backup of any directory.
+
+◼ Moreover, Crontab is used to automate the backup script.
+Lets understand what is #cron and #crontab ?
+
+DevOps engineers are known for #automation. Cron allows you to automate or schedule any task to be performed at a particular time interval. Whereas Crontab is a file that contains the set of commands to specify the detail of automation such as when and how automation will be performed.
+To understand crontab syntax, use the command 
+$ cat  /etc/crontab
+It will give you an example of job definition. You will see * * * * * , represents min hour dayofmonth month dayofweek respectively.
+
+Reference ( Perfect explanation by Shubham Londhe ) https://lnkd.in/edAvaXfT
+
+For all above tasks, commands are executed and output is shared as screenshots here.
