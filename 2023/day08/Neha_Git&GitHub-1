@@ -1,0 +1,123 @@
+GIT
+
+Git is a version control system that enables variations made in a file to be monitored and tracked. It contains the record of ongoing file development versions which permits switching between different stages of the file and it is implemented on a local system that doesn’t require cloud services for execution. It is utilized in maintaining text, pictures and source code file records. Each file saved in Git has its hash_id, version, author and time.
+
+Version control system (VCS)
+
+Version control is a method of managing and tracking file alterations through a duration in-order to retrieve particular versions of the file. It allows tracing of any previous file alteration that may be a potential cause of error including who performed such alterations and when it was done. It not only permits change or comparison of files and projects but also enables recovery and restoration of such data to an initial form in case of damage or potential loss. It increases efficiency in development and operations delivery due to its collaborative framework as members can work simultaneously on a particular project.
+
+There are three (3) major types of version control systems:
+
+Local version control system
+
+A local version control system utilizes a database stored on a local system to store every file modification as a patch. Only new modifications made to a file since its previous status, are included in each patch. All-important patches to a file are required to be added accordingly until the particular point to enable viewing the previous status of the file at a specific time. The disadvantages to the local version control system are that all modification patch sets can be lost if there is damage to the database or the local system as all records are resident on the local system. Another drawback is the difficulty in team collaboration.
+
+Centralized version control system
+
+The centralized version control system uses a single server that keeps track of all alterations made to a file. It allows concurrent accessing of files on the server by team members, and also pulls files from the server, and pushes files back to the server which enables collaboration and keeps team members up to date on each other’s activities.
+
+The demerits of centralized version control are the single point of failure. If there is corruption in the central database, the project history becomes lost thereby denying information and service access to members except a backup has been taken. Also, if the central server gets damaged, pulling and pushing files including collaboration between members becomes impossible.
+
+From the above figure, we can see PC1 and PC2 in different locations accessing data from the database in the central server.
+
+Distributed version control system
+
+In the distributed version control system, the repository and its history are copied exactly while every clone replicates the original data. Any user’s repository on systems, collaborating through a server can be transferred and used to restore the server if it gets damaged. It is fast, offers detailed modification tracking and is more reliable.
+
+Difficult referencing which is due to non-sequential file modification numbering is one of the drawbacks to the distributed version control system. An example of a distributed version control system is Git.
+
+The image below illustrates the distributed version control system connectivity.
+
+Observing the above figure, we can see the interconnectivity between PC1, PC2 and the server, all simultaneously sharing files and data from the individual database.
+
+Why do we use distributed version control over centralized version control?
+
+Better collaboration: In a DVCS, every developer has a full copy of the repository, including the entire history of all changes. This makes it easier for developers to work together, as they don't have to constantly communicate with a central server to commit their changes or to see the changes made by others.
+
+Improved speed: Because developers have a local copy of the repository, they can commit their changes and perform other version control actions faster, as they don't have to communicate with a central server.
+
+Greater flexibility: With a DVCS, developers can work offline and commit their changes later when they do have an internet connection. They can also choose to share their changes with only a subset of the team, rather than pushing all of their changes to a central server.
+
+Enhanced security: In a DVCS, the repository history is stored on multiple servers and computers, which makes it more resistant to data loss. If the central server in a CVCS goes down or the repository becomes corrupted, it can be difficult to recover the lost data.
+
+GIT Architecture
+
+There are three (3) layers in the GIT local architecture which makes it a Tier-3 architecture. These are:
+
+Working directory: The GIT working directory enables alteration of source code and it is created when a project is been installed and started on a local system.
+
+Staging area: This is where the code is staged after being modified in the working directory and the ‘git add’ command is used in execution to move codes from the working directory to the staging area, and a snapshot of the version will be created upon committing.
+
+Local repository: This is where the code is committed to if alteration is completed using the ‘commit’ command from the staging area. It is resident on the local machine.
+
+The above figure illustrates the Git local architecture diagram and flow of instructions.
+
+Git add It is used to add files and directories after alteration to the Git staging area.
+
+Commit The commit command is used to keep track of changes in a local repository's files and each commit has a unique ID.
+
+git checkout used to switch branches.
+
+Installing GIT (Ubuntu)
+
+To install Git on an ubuntu machine, we execute the following commands on the command line interface:
+
+$ sudo su (to change to the user with admin privileges)
+
+$ sudo apt-get update (to update the package repository)
+
+$ sudo apt-get install git -y (to install git)
+
+$ sudo git --version (to verify the installation)
+
+Configuring GIT
+
+After a successful installation, the next thing we will do is to set a username and password that will be used to identify and track changes to a file by users.
+
+$ git config --global user.name name
+
+$ git config --global user.email name@gmail.com
+
+Initializing GIT
+
+$ mkdir LocalRepo
+
+$ cd LocalRepo/
+
+$ git init
+
+Now this directory will act as your Git repository with name LocalRepo consisting .git folder.
+
+GitHub
+
+GitHub is a version management tool that allows simultaneous collaboration on projects remotely. Git repository is an online hosting service that stores records of and shares Git version control projects in a database outside the local computer/server and it is entirely cloud-based. It is a graphically depicted user interface that includes built-in control and task-management capabilities. It permits code sharing and editing of Git branches from any location.
+
+GitHub Architecture
+
+The above figure shows the flow architect of code between Git on the local system and GitHub on a remote server. The flow comprises some commands which are executed at different stages of the flow:
+
+git add - used to add files and directories after alteration to the Git staging area.
+
+git commit - The commit command is used to keep track of changes in a local repository's files and each commit has a unique ID.
+
+git push – used to upload a repository from a local machine to the GitHub remote server.
+
+git pull – uploads a copy of the repository from the remote server to the local server.
+
+git checkout - used to switch branches.
+
+git merge – used to merge two (2) branches.
+
+Steps to push the repository to GitHub
+
+To make use of GitHub, an account must first be created on GitHub. So, I have created my account on GitHub as shown below.
+
+https://github.com/nehabhardwaj1507
+
+Now, to start working with GitHub, create a repository by clicking on the '+' sign in the top-right corner. Add files to it. Commit the changes and push the repo to GitHub.
+
+It takes two arguments to push a repository to GitHub, a remote name and a branch name;
+
+$ git push <REMOTENAME> <BRANCHNAME>
+
+Whereas, to pull a repository from GitHub simply means to clone the repository from the remote GitHub server to the local system using the git clone command.
